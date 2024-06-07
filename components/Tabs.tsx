@@ -41,22 +41,7 @@ const Tabs = () => {
 
     const [active, setActive] = useState(false)
 
-    const changeBackground = (idTocheck: number) => {
-        TabsData.map(({ id }) => {
-            if (id === idTocheck) {
-                setActive(true)
-                console.log(active);
-
-                console.log("hello " + id + " and " + idTocheck);
-
-            }
-            else {
-                setActive(false)
-            }
-
-            // console.log("hello outside");
-        })
-    }
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
     return (
         <div className="fixed inset-x-0 bottom-0 bg-red-600 shadow-lg md:hidden border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 z-50 border-t-purple/45 border-t-4"
@@ -69,7 +54,7 @@ const Tabs = () => {
         >
             <div className="flex justify-between px-3 py-2">
                 {TabsData.map(({ id, title, icons }) => (
-                    <button onClick={() => changeBackground(id)} className={`flex flex-col rounded-lg items-center px-3  py-2 ${active ? "bg-purple/45 " : ""}`} key={id}>
+                    <button className={`flex flex-col rounded-lg items-center px-3  py-2 ${id === activeIndex ? "bg-purple/45 " : ""}`} onClick={() => setActiveIndex(id)} key={id}>
                         {icons}
                         <span className="text-xs">{title}</span>
                     </button>
