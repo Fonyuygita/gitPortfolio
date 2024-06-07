@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
+import Tabs from "../components/Tabs";
 // import { ThemeProvider } from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +25,10 @@ export default function RootLayout({
           defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
-        >{children}</ThemeProvider>
+        >
+          {children}
+          <Tabs />
+        </ThemeProvider>
       </body>
     </html>
   );
