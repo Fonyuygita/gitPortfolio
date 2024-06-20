@@ -13,7 +13,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/y1.png",
+    img: "/PC.Jpg",
     spareImg: "",
   },
   {
@@ -70,12 +70,12 @@ export const gridItems = [
 
   {
     id: 7,
-    title: "What if Feynman was Computer Science Professor",
+    title: "Want to explore my Pc? 🙋 ",
     description: "",
     className: "lg:col-span-2 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/y1.png",
+    img: "/PC.png",
     spareImg: "",
   },
   {
