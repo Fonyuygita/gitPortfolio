@@ -6,11 +6,12 @@ import Image from 'next/image'
 import MagicButton from './ui/ShimerButton'
 import { FaLocationArrow } from 'react-icons/fa'
 import { SparklesCore } from './ui/Sparkles'
+import { GlobeDemo } from './ui/GridGlobe'
 // primary section you see when first visit the page
 const Hero = () => {
     return (
         <div className='pb-20 pt-36'>
-            <div className="h-[2rem] -z-20  w-screen bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
+            <div className="h-[1rem] -z-20  w-screen bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
                 <div className="w-full absolute inset-0 h-screen top-0 left-0  ">
                     <SparklesCore
                         id="tsparticlesfullpage"
@@ -31,14 +32,15 @@ const Hero = () => {
             </div>
 
 
-            <div className="absolute top-0 left-0 opacity-0 bg-grid bg-center bg-cover h-screen w-full ">hello</div>
+            <div className="absolute top-0 left-0 opacity-0 bg-grid bg-center bg-cover h-screen w-full "></div>
 
             <div className="flex justify-center relative my-20 z-10">
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
-                    <Image src="/user.png" alt='user' width={350} height={350} className='rounded-full my-3' />
+                    <Image src="/gito.gif" alt='user' width={350} height={350} className='rounded-lg md:rounded-full my-3 ' />
+
                     <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Majestic And Great Tutor🚰</h2>
                     <TextGenerateEffect
-                        className='text-center text-[40px] md:text-5xl lg:text-8xl'
+                        className='text-center text-[27px] md:text-5xl lg:text-8xl'
                         words='Following the Foot steps of FeynMan, But in Cs'
                     />
                     <p className="text-center md:tracking-wider mt-2 mb-4 text-sm md:text-lg lg:text-2xl">{" Hi I'm Gita, A developer"}</p>
